@@ -2,7 +2,7 @@
 @mixin header-nav {
   width: 100vw;
   background-color: $extra-dark-color;
-  font-size: 1.5em;
+  font-size: 1em;
   color: $primary-color;
 
   ul {
@@ -27,4 +27,11 @@
       flex-direction: column;
     }
   }
+}
+
+@mixin hover-effect {
+  color: $effect-color;
+  border-color: $effect-color;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
 }

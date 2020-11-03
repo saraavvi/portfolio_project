@@ -11,10 +11,14 @@
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
+  background-color: darken($light-color, 10%);
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+a:hover {
   color: inherit;
 }
 
@@ -40,13 +44,16 @@ html {
   grid-template-areas:
     "nav nav nav"
     "home home home"
-    "left about right";
+    "about about about";
 }
 // navbaren
 nav {
   //position: fixed;
   grid-area: nav;
   @include header-nav;
+  a:hover {
+    color: $effect-color;
+  }
 }
 
 // styling for home / landing page section
@@ -66,19 +73,27 @@ nav {
       color: $light-color;
     }
     button {
+      padding: 1rem;
       margin: 1.5rem;
       background-color: $dark-color;
       border: 2px solid $primary-color;
       color: $primary-color;
+
+      &:hover {
+        @include hover-effect;
+      }
     }
   }
 }
 // styling for about section
 #about {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   grid-area: about;
-  background: $light-color;
+  background: darken($light-color, 10%);
+  grid-column-start: 2;
+  grid-column-end: 2;
   justify-content: space-around;
   align-items: center;
   #cv-img-container {
