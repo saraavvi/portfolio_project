@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'functions';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Allmän styling
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: $main-color;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
