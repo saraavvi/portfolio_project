@@ -1,29 +1,70 @@
-@import 'variables';
-@import 'functions';
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "variables";
+@import "functions";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Allmän styling
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
-    background: #fff;
-    color: $main-color;
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
+// grid setup
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 10fr 6fr;
+  grid-template-areas:
+    "nav"
+    "home"
+    "about";
+}
+// navbaren
+nav {
+  grid-area: nav;
+  @include header-nav;
+}
+
+// allt i home / landing page section
+#home {
+  grid-area: home;
+  background-color: $dark-color;
+  display: flex;
+  justify-content: center;
+
+  #hello-container {
+    margin: 12rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: $light-color;
+    }
+    button {
+      margin: 1.5rem;
+      background-color: $dark-color;
+      border: 2px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+}

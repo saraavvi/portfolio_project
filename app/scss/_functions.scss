@@ -1,1 +1,30 @@
 // all functions and mixins
+@mixin header-nav {
+  width: 100vw;
+  background-color: $extra-dark-color;
+  font-size: 1.5em;
+  color: $primary-color;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex: 1;
+    margin: 0 2rem 0 2rem;
+
+    li {
+      padding: 1.5rem;
+      padding-right: 5rem;
+    }
+
+    #home-link {
+      margin-right: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column;
+    }
+  }
+}
