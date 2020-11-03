@@ -11,7 +11,6 @@
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
-  background: #fff;
 }
 
 a {
@@ -29,22 +28,28 @@ img {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // grid setup
 .grid-container {
   display: grid;
-  grid-template-rows: 1fr 10fr 6fr;
+  grid-template-rows: 1fr 12fr 5fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas:
-    "nav"
-    "home"
-    "about";
+    "nav nav nav"
+    "home home home"
+    "left about right";
 }
 // navbaren
 nav {
+  //position: fixed;
   grid-area: nav;
   @include header-nav;
 }
 
-// allt i home / landing page section
+// styling for home / landing page section
 #home {
   grid-area: home;
   background-color: $dark-color;
@@ -52,7 +57,7 @@ nav {
   justify-content: center;
 
   #hello-container {
-    margin: 12rem;
+    margin: 16rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -65,6 +70,33 @@ nav {
       background-color: $dark-color;
       border: 2px solid $primary-color;
       color: $primary-color;
+    }
+  }
+}
+// styling for about section
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: about;
+  background: $light-color;
+  justify-content: space-around;
+  align-items: center;
+  #cv-img-container {
+    width: 200px;
+
+    #cv-img {
+      border-radius: 10px;
+    }
+  }
+  #introduction-container {
+    width: 60%;
+  }
+  #arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &-img {
+      width: 30px;
     }
   }
 }

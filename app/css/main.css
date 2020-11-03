@@ -7165,8 +7165,7 @@ progress {
 
 body {
   font-family: "Dosis", sans-serif;
-  line-height: 1.6;
-  background: #fff; }
+  line-height: 1.6; }
 
 a {
   text-decoration: none;
@@ -7180,10 +7179,14 @@ ul {
 img {
   width: 100%; }
 
+html {
+  scroll-behavior: smooth; }
+
 .grid-container {
   display: grid;
-  grid-template-rows: 1fr 10fr 6fr;
-  grid-template-areas: "nav" "home" "about"; }
+  grid-template-rows: 1fr 12fr 5fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "nav nav nav" "home home home" "left about right"; }
 
 nav {
   grid-area: nav;
@@ -7212,7 +7215,7 @@ nav {
   display: flex;
   justify-content: center; }
   #home #hello-container {
-    margin: 12rem;
+    margin: 16rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -7224,3 +7227,23 @@ nav {
       background-color: #22263d;
       border: 2px solid #ffa260;
       color: #ffa260; }
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: about;
+  background: #fff;
+  justify-content: space-around;
+  align-items: center; }
+  #about #cv-img-container {
+    width: 200px; }
+    #about #cv-img-container #cv-img {
+      border-radius: 10px; }
+  #about #introduction-container {
+    width: 60%; }
+  #about #arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    #about #arrow-img {
+      width: 30px; }
