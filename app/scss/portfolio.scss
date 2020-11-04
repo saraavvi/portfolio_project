@@ -1,0 +1,35 @@
+@import "variables";
+@import "functions";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Allmän styling
+@include general-styling;
+// navbaren
+nav {
+  //position: fixed;
+  grid-area: nav;
+  @include header-nav;
+  a:hover {
+    color: $effect-color;
+  }
+}
+// grid setup
+.grid-container {
+  display: grid;
+  grid-template-rows: 2fr 5fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "heading heading heading heading heading"
+    "project project project project project";
+}
+//page intro
+#portfolio-intro {
+  margin-top: 2rem;
+  grid-area: heading;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+  }
+}

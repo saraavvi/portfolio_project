@@ -3,57 +3,29 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Allmän styling
-* {
-  margin: 0;
-  padding: 0;
-}
-
+@include general-styling;
 body {
-  font-family: "Dosis", sans-serif;
-  line-height: 1.6;
   background-color: darken($light-color, 10%);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-a:hover {
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-// grid setup
-.grid-container {
-  display: grid;
-  grid-template-rows: 1fr 12fr 5fr;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas:
-    "nav nav nav"
-    "home home home"
-    "about about about";
 }
 // navbaren
 nav {
   //position: fixed;
-  grid-area: nav;
+  //grid-area: nav;
   @include header-nav;
   a:hover {
     color: $effect-color;
   }
+}
+// grid setup
+.grid-container {
+  display: grid;
+  grid-template-rows: /*1fr*/ 100vh 5fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+    //"nav nav nav"
+
+    "home home home"
+    "about about about";
 }
 
 // styling for home / landing page section
@@ -62,9 +34,10 @@ nav {
   background-color: $dark-color;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   #hello-container {
-    margin: 16rem;
+    //margin: 16rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -80,7 +53,7 @@ nav {
       color: $primary-color;
 
       &:hover {
-        @include hover-effect;
+        @include button-effect;
       }
     }
   }

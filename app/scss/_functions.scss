@@ -3,7 +3,7 @@
   width: 100vw;
   background-color: $extra-dark-color;
   font-size: 1em;
-  color: $primary-color;
+  color: $light-color;
 
   ul {
     display: flex;
@@ -29,9 +29,43 @@
   }
 }
 
-@mixin hover-effect {
+@mixin button-effect {
   color: $effect-color;
   border-color: $effect-color;
   box-shadow: 0 0.5em 0.5em -0.4em;
   transform: translateY(-0.25em);
+}
+
+@mixin general-styling {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: $main-font;
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
