@@ -7185,6 +7185,9 @@ img {
 html {
   scroll-behavior: smooth; }
 
+body {
+  background-color: #e6e6e6; }
+
 nav {
   grid-area: nav;
   width: 100vw;
@@ -7210,15 +7213,28 @@ nav {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 2fr 5fr;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: "heading heading heading heading heading" "project project project project project"; }
+  grid-template-rows: 2fr 8fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "heading heading heading" "project project project"; }
 
 #portfolio-intro {
   margin-top: 2rem;
   grid-area: heading;
-  grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
   text-align: center; }
   #portfolio-intro h1, #portfolio-intro .h1 {
     font-size: 4rem; }
+
+#projects-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  grid-area: project;
+  grid-column-start: 2;
+  grid-column-end: 2; }
+  #projects-container .project-box {
+    border: 2px solid #22263d;
+    background-color: #fff;
+    width: 300px;
+    height: 300px; }
