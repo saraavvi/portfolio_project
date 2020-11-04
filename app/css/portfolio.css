@@ -7205,7 +7205,7 @@ nav {
       padding-right: 5rem; }
     nav ul #home-link {
       margin-right: auto; }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     nav ul {
       flex-direction: column; } }
   nav a:hover {
@@ -7234,7 +7234,19 @@ nav {
   grid-column-start: 2;
   grid-column-end: 2; }
   #projects-container .project-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #22263d;
     background-color: #fff;
     width: 300px;
     height: 300px; }
+
+@media (max-width: 800px) {
+  #projects-container {
+    flex-wrap: wrap; }
+  .grid-container {
+    grid-template-rows: 1fr 5fr; }
+  .project-box {
+    width: 300px;
+    height: 300px; } }

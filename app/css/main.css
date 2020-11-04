@@ -7204,7 +7204,7 @@ nav {
       padding-right: 5rem; }
     nav ul #home-link {
       margin-right: auto; }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     nav ul {
       flex-direction: column; } }
   nav a:hover {
