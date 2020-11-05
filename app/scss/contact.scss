@@ -1,0 +1,73 @@
+@import "variables";
+@import "functions";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Allmän styling
+@include general-styling;
+body {
+  color: $light-color;
+  background-color: $dark-color;
+}
+// navbaren
+nav {
+  //position: fixed;
+  //grid-area: nav;
+  @include header-nav;
+  a:hover {
+    color: $effect-color;
+  }
+}
+// grid setup
+.grid-container {
+  height: 93vh;
+  display: grid;
+  grid-template-rows: 2fr 7fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "heading heading heading"
+    "form form form"
+    "footer footer footer";
+}
+//page intro
+#contact-intro {
+  margin-top: 2rem;
+  grid-area: heading;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+  }
+}
+//contact form
+#contactform-container {
+  margin-top: 3rem;
+  grid-area: form;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  #contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .text-input {
+      width: 100%;
+      margin-bottom: 0.2rem;
+      background-color: $extra-dark-color;
+      border: none;
+    }
+    .btn {
+      margin-top: 1rem;
+      background-color: $dark-color;
+      border: 2px solid $primary-color;
+      color: $primary-color;
+
+      &:hover {
+        transform: translateY(-0.25em);
+      }
+    }
+  }
+}
+footer {
+  background-color: $extra-dark-color;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+}

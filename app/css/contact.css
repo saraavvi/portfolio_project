@@ -7186,10 +7186,10 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #e6e6e6; }
+  color: #fff;
+  background-color: #22263d; }
 
 nav {
-  grid-area: nav;
   width: 100vw;
   background-color: #151b29;
   font-size: 1em;
@@ -7212,39 +7212,43 @@ nav {
     color: #f1ff5c; }
 
 .grid-container {
+  height: 93vh;
   display: grid;
-  grid-template-rows: 2fr 8fr;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: "heading heading heading" "project project project"; }
+  grid-template-rows: 2fr 7fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "heading heading heading" "form form form" "footer footer footer"; }
 
-#portfolio-intro {
+#contact-intro {
   margin-top: 2rem;
   grid-area: heading;
   text-align: center; }
-  #portfolio-intro h1, #portfolio-intro .h1 {
+  #contact-intro h1, #contact-intro .h1 {
     font-size: 4rem; }
 
-#projects-container {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  grid-area: project;
+#contactform-container {
+  margin-top: 3rem;
+  grid-area: form;
   grid-column-start: 2;
   grid-column-end: 2; }
-  #projects-container .project-box {
+  #contactform-container #contact-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #22263d;
-    background-color: #fff;
-    width: 300px;
-    height: 300px; }
+    flex-wrap: wrap;
+    justify-content: center; }
+    #contactform-container #contact-form .text-input {
+      width: 100%;
+      margin-bottom: 0.2rem;
+      background-color: #151b29;
+      border: none; }
+    #contactform-container #contact-form .btn {
+      margin-top: 1rem;
+      background-color: #22263d;
+      border: 2px solid #ffa260;
+      color: #ffa260; }
+      #contactform-container #contact-form .btn:hover {
+        transform: translateY(-0.25em); }
 
-@media (max-width: 800px) {
-  #projects-container {
-    flex-wrap: wrap; }
-  .grid-container {
-    grid-template-rows: 1fr 5fr; }
-  .project-box {
-    width: 300px;
-    height: 300px; } }
+footer {
+  background-color: #151b29;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around; }
