@@ -1,0 +1,56 @@
+@import "variables";
+@import "functions";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Allmän styling
+@include general-styling;
+body {
+  background-color: darken($light-color, 10%);
+}
+// navbaren
+nav {
+  //position: fixed;
+  //grid-area: nav;
+  @include header-nav;
+  a:hover {
+    color: $effect-color;
+  }
+}
+//grid setup
+.grid-container {
+  display: grid;
+  grid-template-rows: 2fr 10fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "heading heading"
+    "text list";
+}
+.education-intro {
+  margin-top: 2rem;
+  grid-area: heading;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+  }
+}
+.education-container {
+  grid-area: text;
+  margin: 3rem 5rem 0 4rem;
+}
+.list-container {
+  //background-color: $dark-color;
+  //color: $light-color;
+  margin-top: 3rem;
+  grid-area: list;
+  .progress {
+    overflow: hidden;
+    height: 20px;
+    background: $dark-color;
+    border-radius: 5px;
+    div {
+      height: 100%;
+      text-align: center;
+      background-color: $primary-color;
+    }
+  }
+}
