@@ -66,8 +66,22 @@ nav {
   }
 }
 footer {
+  display: flex;
+  justify-content: center;
   background-color: $extra-dark-color;
   grid-area: footer;
-  display: flex;
-  justify-content: space-around;
+  align-items: center;
+  #link-container {
+    //margin-top: 1rem;
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    .contact-link {
+      margin: 0 10px 0 10px;
+      min-width: 50px;
+      &:hover {
+        transform: translateY(-0.25em);
+      }
+    }
+  }
 }

@@ -7248,7 +7248,17 @@ nav {
         transform: translateY(-0.25em); }
 
 footer {
+  display: flex;
+  justify-content: center;
   background-color: #151b29;
   grid-area: footer;
-  display: flex;
-  justify-content: space-around; }
+  align-items: center; }
+  footer #link-container {
+    display: flex;
+    width: 25%;
+    justify-content: space-around; }
+    footer #link-container .contact-link {
+      margin: 0 10px 0 10px;
+      min-width: 50px; }
+      footer #link-container .contact-link:hover {
+        transform: translateY(-0.25em); }
