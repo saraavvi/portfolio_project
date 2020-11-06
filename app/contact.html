@@ -39,19 +39,28 @@
           method="POST"
           id="contact-form"
         >
-          <input class="text-input name-input" type="text" placeholder="Name" />
+          <input
+            class="text-input name-input"
+            type="text"
+            placeholder="Name"
+            name="name"
+          />
           <input
             class="text-input email-input"
             type="email"
             placeholder="Email Address"
+            name="_replyto"
           />
           <textarea
             class="text-input message-input"
             name=""
             placeholder="Your Message"
             rows="5"
+            name="message"
           ></textarea>
-          <button type="submit" class="btn btn-dark">Submit</button>
+          <button type="submit" class="btn btn-dark" value="Send">
+            Submit
+          </button>
         </form>
       </div>
       <footer>
