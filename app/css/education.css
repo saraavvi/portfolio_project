@@ -7186,7 +7186,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #e6e6e6; }
+  background-color: #22263d;
+  color: #fff; }
 
 nav {
   width: 100vw;
@@ -7211,6 +7212,7 @@ nav {
     color: #f1ff5c; }
 
 .grid-container {
+  height: 100vh;
   display: grid;
   grid-template-rows: 2fr 10fr;
   grid-template-columns: 1fr 1fr;
@@ -7228,14 +7230,13 @@ nav {
   margin: 3rem 5rem 0 4rem; }
 
 .list-container {
-  margin-top: 3rem;
+  margin: 3rem 4rem 0 0;
   grid-area: list; }
   .list-container .progress {
     overflow: hidden;
     height: 20px;
-    background: #22263d;
+    background: #e6e6e6;
     border-radius: 5px; }
     .list-container .progress div {
       height: 100%;
-      text-align: center;
       background-color: #ffa260; }

@@ -5,7 +5,9 @@
 // Allmän styling
 @include general-styling;
 body {
-  background-color: darken($light-color, 10%);
+  background-color: $dark-color;
+  color: $light-color;
+  //background-color: darken($light-color, 10%);
 }
 // navbaren
 nav {
@@ -18,6 +20,7 @@ nav {
 }
 //grid setup
 .grid-container {
+  height: 100vh;
   display: grid;
   grid-template-rows: 2fr 10fr;
   grid-template-columns: 1fr 1fr;
@@ -40,16 +43,16 @@ nav {
 .list-container {
   //background-color: $dark-color;
   //color: $light-color;
-  margin-top: 3rem;
+  margin: 3rem 4rem 0 0;
   grid-area: list;
   .progress {
     overflow: hidden;
     height: 20px;
-    background: $dark-color;
+    background: darken($light-color, 10%);
     border-radius: 5px;
     div {
       height: 100%;
-      text-align: center;
+      //text-align: center;
       background-color: $primary-color;
     }
   }
