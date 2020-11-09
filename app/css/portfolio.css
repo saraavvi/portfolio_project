@@ -7237,12 +7237,14 @@ nav {
   min-width: 900px; }
   #projects-container .card {
     border-color: #22263d;
-    border-width: 2px; }
+    border-width: 2px;
+    background-color: #22263d; }
     #projects-container .card .card-body {
       text-align: center;
-      background-color: #151b29; }
+      background-color: #151b29;
+      border-radius: 10px; }
       #projects-container .card .card-body .btn {
-        padding: 1rem;
+        padding: 0.5rem;
         margin: 1.5rem;
         background-color: #22263d;
         border: 2px solid #ffa260;
@@ -7293,3 +7295,14 @@ nav {
   }
 }
 */
+.modal-header {
+  background-color: #ffa260;
+  text-align: center; }
+  .modal-header h5, .modal-header .h5 {
+    text-align: center; }
+
+.modal-content {
+  color: black; }
+
+.modal-footer button {
+  background-color: #22263d; }
