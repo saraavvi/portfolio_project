@@ -52,6 +52,7 @@ nav {
       margin-bottom: 0.2rem;
       background-color: $extra-dark-color;
       border: none;
+      color: white;
     }
     .btn {
       margin-top: 1rem;
@@ -83,5 +84,16 @@ footer {
         transform: translateY(-0.25em);
       }
     }
+  }
+}
+//media queries for ipad and iphones
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .grid-container {
+    grid-template-columns: 1fr 4fr 1fr;
   }
 }

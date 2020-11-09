@@ -7238,7 +7238,8 @@ nav {
       width: 100%;
       margin-bottom: 0.2rem;
       background-color: #151b29;
-      border: none; }
+      border: none;
+      color: white; }
     #contactform-container #contact-form .btn {
       margin-top: 1rem;
       background-color: #22263d;
@@ -7262,3 +7263,11 @@ footer {
       min-width: 50px; }
       footer #link-container .contact-link:hover {
         transform: translateY(-0.25em); }
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr 2fr 1fr; } }
+
+@media (max-width: 450px) {
+  .grid-container {
+    grid-template-columns: 1fr 4fr 1fr; } }

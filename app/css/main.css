@@ -7213,7 +7213,7 @@ nav {
 .grid-container {
   display: grid;
   grid-template-rows: 100vh 5fr;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas: "home home home" "about about about"; }
 
 #home {
@@ -7256,6 +7256,7 @@ nav {
     #about #cv-img-container #cv-img {
       border-radius: 10px; }
   #about #introduction-container {
+    margin: 1rem;
     width: 60%; }
   #about #arrow {
     width: 100%;
@@ -7263,3 +7264,12 @@ nav {
     justify-content: center; }
     #about #arrow-img {
       width: 30px; }
+
+@media (max-width: 800px) {
+  #about {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 1rem; }
+    #about #introduction-container {
+      width: 100%;
+      text-align: center; } }
