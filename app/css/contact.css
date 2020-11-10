@@ -7190,7 +7190,7 @@ body {
   background-color: #22263d; }
 
 nav {
-  width: 100vw;
+  width: 100%;
   background-color: #151b29;
   font-size: 1em;
   color: #fff; }
@@ -7201,20 +7201,33 @@ nav {
     flex: 1;
     margin: 0 2rem 0 2rem; }
     nav ul li {
-      padding: 1.5rem;
-      padding-right: 5rem; }
+      padding: 1.5rem; }
+      nav ul li a {
+        padding: 15px 0px;
+        position: relative; }
+      nav ul li a:after {
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0; }
+      nav ul li a:hover:after {
+        width: 100%;
+        left: 0; }
     nav ul #home-link {
       margin-right: auto; }
   @media (max-width: 800px) {
     nav ul {
       flex-direction: column; } }
-  nav a:hover {
-    color: #f1ff5c; }
 
 .grid-container {
-  height: 93vh;
+  height: 91vh;
   display: grid;
-  grid-template-rows: 2fr 7fr 3fr;
+  grid-template-rows: 2fr 9fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "heading heading heading" "form form form" "footer footer footer"; }
 
@@ -7239,7 +7252,7 @@ nav {
       margin-bottom: 0.2rem;
       background-color: #151b29;
       border: none;
-      color: white; }
+      color: #fff; }
     #contactform-container #contact-form .btn {
       margin-top: 1rem;
       background-color: #22263d;
@@ -7249,20 +7262,17 @@ nav {
         transform: translateY(-0.25em); }
 
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: #151b29;
   grid-area: footer;
-  align-items: center; }
-  footer #link-container {
-    display: flex;
-    width: 25%;
-    justify-content: space-around; }
-    footer #link-container .contact-link {
-      margin: 0 10px 0 10px;
-      min-width: 50px; }
-      footer #link-container .contact-link:hover {
+  display: flex;
+  justify-content: center; }
+  footer ul {
+    display: flex; }
+    footer ul li {
+      padding: 1rem; }
+      footer ul li:hover {
         transform: translateY(-0.25em); }
+    footer ul p {
+      font-size: 2rem; }
 
 @media (max-width: 800px) {
   .grid-container {

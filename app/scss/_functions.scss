@@ -1,6 +1,6 @@
 // all functions and mixins
 @mixin header-nav {
-  width: 100vw;
+  width: 100%;
   background-color: $extra-dark-color;
   font-size: 1em;
   color: $light-color;
@@ -14,7 +14,25 @@
 
     li {
       padding: 1.5rem;
-      padding-right: 5rem;
+      a {
+        padding: 15px 0px;
+        position: relative;
+      }
+      a:after {
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: $light-color;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      a:hover:after {
+        width: 100%;
+        left: 0;
+      }
     }
 
     #home-link {

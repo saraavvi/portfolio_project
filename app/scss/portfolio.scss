@@ -13,9 +13,6 @@ nav {
   //position: fixed;
   grid-area: nav;
   @include header-nav;
-  a:hover {
-    color: $effect-color;
-  }
 }
 // grid setup
 .grid-container {
@@ -52,6 +49,9 @@ nav {
     border-color: $dark-color;
     border-width: 2px;
     background-color: $dark-color;
+    .card-img-top {
+      height: 180px;
+    }
 
     .card-body {
       text-align: center;
@@ -91,8 +91,19 @@ nav {
   color: black;
 }
 .modal-footer {
+  background-color: darken($light-color, 10%);
   button {
+    color: $light-color;
     background-color: $dark-color;
+    border-color: $light-color;
+    &:hover {
+      color: $light-color;
+    }
+  }
+  a {
+    background-color: $light-color;
+    color: $dark-color;
+    border-color: $light-color;
   }
 }
 

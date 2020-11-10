@@ -13,15 +13,12 @@ nav {
   //position: fixed;
   //grid-area: nav;
   @include header-nav;
-  a:hover {
-    color: $effect-color;
-  }
 }
 // grid setup
 .grid-container {
-  height: 93vh;
+  height: 91vh;
   display: grid;
-  grid-template-rows: 2fr 7fr 3fr;
+  grid-template-rows: 2fr 9fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "heading heading heading"
@@ -43,6 +40,7 @@ nav {
   grid-area: form;
   grid-column-start: 2;
   grid-column-end: 2;
+
   #contact-form {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +50,7 @@ nav {
       margin-bottom: 0.2rem;
       background-color: $extra-dark-color;
       border: none;
-      color: white;
+      color: $light-color;
     }
     .btn {
       margin-top: 1rem;
@@ -67,22 +65,21 @@ nav {
   }
 }
 footer {
+  //background-color: $extra-dark-color;
+  grid-area: footer;
   display: flex;
   justify-content: center;
-  background-color: $extra-dark-color;
-  grid-area: footer;
-  align-items: center;
-  #link-container {
-    //margin-top: 1rem;
+  ul {
     display: flex;
-    width: 25%;
-    justify-content: space-around;
-    .contact-link {
-      margin: 0 10px 0 10px;
-      min-width: 50px;
+
+    li {
+      padding: 1rem;
       &:hover {
         transform: translateY(-0.25em);
       }
+    }
+    p {
+      font-size: 2rem;
     }
   }
 }

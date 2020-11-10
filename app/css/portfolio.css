@@ -7191,7 +7191,7 @@ body {
 
 nav {
   grid-area: nav;
-  width: 100vw;
+  width: 100%;
   background-color: #151b29;
   font-size: 1em;
   color: #fff; }
@@ -7202,15 +7202,28 @@ nav {
     flex: 1;
     margin: 0 2rem 0 2rem; }
     nav ul li {
-      padding: 1.5rem;
-      padding-right: 5rem; }
+      padding: 1.5rem; }
+      nav ul li a {
+        padding: 15px 0px;
+        position: relative; }
+      nav ul li a:after {
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0; }
+      nav ul li a:hover:after {
+        width: 100%;
+        left: 0; }
     nav ul #home-link {
       margin-right: auto; }
   @media (max-width: 800px) {
     nav ul {
       flex-direction: column; } }
-  nav a:hover {
-    color: #f1ff5c; }
 
 .grid-container {
   display: grid;
@@ -7239,6 +7252,8 @@ nav {
     border-color: #22263d;
     border-width: 2px;
     background-color: #22263d; }
+    #projects-container .card .card-img-top {
+      height: 180px; }
     #projects-container .card .card-body {
       text-align: center;
       background-color: #151b29;
@@ -7266,8 +7281,18 @@ nav {
 .modal-content {
   color: black; }
 
-.modal-footer button {
-  background-color: #22263d; }
+.modal-footer {
+  background-color: #e6e6e6; }
+  .modal-footer button {
+    color: #fff;
+    background-color: #22263d;
+    border-color: #fff; }
+    .modal-footer button:hover {
+      color: #fff; }
+  .modal-footer a {
+    background-color: #fff;
+    color: #22263d;
+    border-color: #fff; }
 
 @media (max-width: 1000px) {
   #projects-container {

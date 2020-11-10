@@ -12,9 +12,6 @@ nav {
   //position: fixed;
   //grid-area: nav;
   @include header-nav;
-  a:hover {
-    color: $effect-color;
-  }
 }
 // grid setup
 .grid-container {
