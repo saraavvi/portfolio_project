@@ -1,0 +1,50 @@
+Scrum:
+
+Scrum är en agil metod. Det kännetecknas av att fokus ligger på själva produkten man utvecklar och inte hur man utvecklar den. Arbetet är uppdelat i tidsbestämda iterationer, så kallade sprintar. Dessa perioder kan vara mellan 3 - 30 dagar. Människorna i scrum-teamet är uppdelade i tre roller: Produktägaren, Scrum master och Utvecklingstemet.
+Kort beskrivet fungerar det som följande:
+
+Product Backlog
+Det finns en slags To-Do-lista över allt som behöver göras. Det är produktägaren som bestämmer över vad som finns här och hur listan ska prioriteras.
+
+Sprint Planning
+Ett möte hålls där utvecklingsteamet bedömer vilka delar från product backlog de hinner göra i kommande sprint, och flyttar dessa till sprint backlog.
+
+Sprint Backlog
+Detta är kommande sprints to-do-lista.
+
+Daily Scrum
+Utvecklingsteamet har varje dag ett kort möte på ca 15 minuter för att stämma av med varandra och planera de kommande 24 timmarna.
+
+Sprint Review
+Utvecklingsteamet, scrum master och produktägaren granskar sprintens resultat. Vad har gjorts/inte gjorts och hur påverkar detta nästa sprint?
+
+Sprint Retrospective
+Utvecklingsteamet, scrum master och produktägaren utvärderar den senaste sprinten utifrån arbetssätt och identifierar möjlig förbättringar.
+
+Nu är denna sprinten klar och ett nytt sprint planning möte hålls.
+
+Grafisk profil:
+
+Det är instruktioner för tex vilka färger och typsnitt som ska användas, och hur företagets logotyp ska användas och anpassas efter olika användningsområden. Detta för att kunna vara konsekvent med designen och hur företaget representeras visuellt. Det här är ju oftast det första intrycket en potentiell kund får av företaget. Med hjälp av en grafisk profil kan man skapa en visuell upplevelse som stärker varumärkets strategi och värderingar. Och man skapar igenkänning. 
+
+Tillgänglighet: 
+
+Innebär att Webbsidan ska vara tillgänglig även för människor med funktionshinder av olika slag. Exempel människor med syn- eller hörselnedsättning, eller äldre personer. Genom att använda sig av de olika webbriktlinjerna kan man skapa bättre förutsättningar för att alla ska ha möjlighet att använda sig av sidan. Det kan bland annat handla om att visa om ett fel har uppstått i ett formulär och beskriva det tydligt. Det ska också framgå tydligt var  någonstans felt uppstod och placera meddelandet i anslutning till det fältet. 
+Det kan också handla om att beskriva allt innehåll som inte är text, för att användare med skärmläsare ska kunna uppfatta innehållet. Tex ge en beskrivande text till en bild eller ett diagram.
+
+I mitt portfolio har jag använt mig av:
+
+1. Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
+https://webbriktlinjer.se/riktlinjer/91-skapa-en-flexibel-layout/
+
+2. Beskriv med text allt innehåll som inte är text
+https://webbriktlinjer.se/riktlinjer/115-textalternativ/
+
+3. Skriv beskrivande sidtitlar
+https://webbriktlinjer.se/riktlinjer/135-skriv-beskrivande-sidtitlar/
+
+4. Skapa rubriker med h-element
+https://webbriktlinjer.se/riktlinjer/105-skapa-rubriker-med-h-element/
+
+5. Se till att koden validerar
+https://webbriktlinjer.se/riktlinjer/84-se-till-att-koden-validerar/

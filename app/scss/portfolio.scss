@@ -57,6 +57,9 @@ nav {
       text-align: center;
       background-color: $extra-dark-color;
       border-radius: 10px;
+      .card-title {
+        font-size: 1.5rem;
+      }
       &:hover {
         //background-color: $primary-color;
       }
@@ -76,6 +79,23 @@ nav {
     }
   }
 }
+//modal styling
+.modal-header {
+  background-color: $primary-color;
+  text-align: center;
+  h3 {
+    text-align: center;
+  }
+}
+.modal-content {
+  color: black;
+}
+.modal-footer {
+  button {
+    background-color: $dark-color;
+  }
+}
+
 // media queries for ipad and iphones
 @media (max-width: 1000px) {
   #projects-container {
@@ -90,55 +110,5 @@ nav {
   }
   .grid-container {
     grid-template-rows: 1fr 10fr 1fr;
-  }
-}
-/*
-#projects-container {
-  //border: 1px solid red;;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  grid-area: project;
-  grid-column-start: 2;
-  grid-column-end: 2;
-
-  .project-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid $dark-color;
-    background-color: $light-color;
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 800px) {
-  #projects-container {
-    flex-wrap: wrap;
-  }
-  .grid-container {
-    grid-template-rows: 1fr 5fr;
-  }
-  .project-box {
-    width: 300px;
-    height: 300px;
-  }
-}
-*/
-//modal styling
-.modal-header {
-  background-color: $primary-color;
-  text-align: center;
-  h5 {
-    text-align: center;
-  }
-}
-.modal-content {
-  color: black;
-}
-.modal-footer {
-  button {
-    background-color: $dark-color;
   }
 }

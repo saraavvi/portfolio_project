@@ -7243,6 +7243,8 @@ nav {
       text-align: center;
       background-color: #151b29;
       border-radius: 10px; }
+      #projects-container .card .card-body .card-title {
+        font-size: 1.5rem; }
       #projects-container .card .card-body .btn {
         padding: 0.5rem;
         margin: 1.5rem;
@@ -7255,6 +7257,18 @@ nav {
           box-shadow: 0 0.5em 0.5em -0.4em;
           transform: translateY(-0.25em); }
 
+.modal-header {
+  background-color: #ffa260;
+  text-align: center; }
+  .modal-header h3, .modal-header .h3 {
+    text-align: center; }
+
+.modal-content {
+  color: black; }
+
+.modal-footer button {
+  background-color: #22263d; }
+
 @media (max-width: 1000px) {
   #projects-container {
     min-width: 600px;
@@ -7266,49 +7280,3 @@ nav {
     grid-template-columns: 1fr; }
   .grid-container {
     grid-template-rows: 1fr 10fr 1fr; } }
-
-/*
-#projects-container {
-  //border: 1px solid red;;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  grid-area: project;
-  grid-column-start: 2;
-  grid-column-end: 2;
-
-  .project-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid $dark-color;
-    background-color: $light-color;
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 800px) {
-  #projects-container {
-    flex-wrap: wrap;
-  }
-  .grid-container {
-    grid-template-rows: 1fr 5fr;
-  }
-  .project-box {
-    width: 300px;
-    height: 300px;
-  }
-}
-*/
-.modal-header {
-  background-color: #ffa260;
-  text-align: center; }
-  .modal-header h5, .modal-header .h5 {
-    text-align: center; }
-
-.modal-content {
-  color: black; }
-
-.modal-footer button {
-  background-color: #22263d; }
