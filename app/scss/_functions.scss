@@ -1,4 +1,4 @@
-// all functions and mixins
+// navbar styling
 @mixin header-nav {
   width: 100%;
   background-color: $extra-dark-color;
@@ -39,21 +39,21 @@
       margin-right: auto;
     }
   }
-
+  // navbar media queries
   @media (max-width: 800px) {
     ul {
       flex-direction: column;
     }
   }
 }
-
+// hover-effect styling for buttons
 @mixin button-effect {
   color: $effect-color;
   border-color: $effect-color;
   box-shadow: 0 0.5em 0.5em -0.4em;
   transform: translateY(-0.25em);
 }
-
+// general styling for all pages
 @mixin general-styling {
   * {
     margin: 0;

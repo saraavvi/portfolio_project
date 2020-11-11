@@ -9,18 +9,14 @@ body {
 }
 // navbaren
 nav {
-  //position: fixed;
-  //grid-area: nav;
   @include header-nav;
 }
 // grid setup
 .grid-container {
   display: grid;
-  grid-template-rows: /*1fr*/ 100vh 5fr;
+  grid-template-rows: 100vh 5fr;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
-    //"nav nav nav"
-
     "home home home"
     "about about about";
 }
@@ -34,7 +30,6 @@ nav {
   align-items: center;
 
   #hello-container {
-    //margin: 16rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -56,18 +51,24 @@ nav {
     }
   }
 }
-// styling for about section
+// styling for about me and education section
 #about {
+  display: grid;
+  grid-template-rows: 5fr 5fr 2fr;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-areas:
+    "image about"
+    "education education"
+    "arrow arrow";
   margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
   grid-area: about;
   background: darken($light-color, 10%);
   grid-column-start: 2;
   grid-column-end: 2;
-  justify-content: space-around;
   align-items: center;
+  row-gap: 1rem;
   #cv-img-container {
+    grid-area: image;
     width: 200px;
 
     #cv-img {
@@ -75,10 +76,15 @@ nav {
     }
   }
   #introduction-container {
+    grid-area: about;
     margin: 1rem;
-    width: 60%;
+    width: 70%;
+  }
+  #education-container {
+    grid-area: education;
   }
   #arrow {
+    grid-area: arrow;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -87,15 +93,28 @@ nav {
     }
   }
 }
-//madia queries for ipad and iphones
+//madia queries for ipad
 @media (max-width: 800px) {
   #about {
     grid-column-start: 1;
     grid-column-end: 4;
-    margin: 1rem;
+    margin: 2rem;
     #introduction-container {
       width: 100%;
-      text-align: center;
     }
+  }
+}
+@media (max-width: 450px) {
+  #about {
+    grid-template-rows: 2fr 2fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image image"
+      "about about"
+      "education education"
+      "arrow arrow";
+  }
+  #cv-img-container {
+    margin: 0 auto;
   }
 }

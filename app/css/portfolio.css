@@ -7237,7 +7237,8 @@ nav {
   grid-area: heading;
   text-align: center; }
   #portfolio-intro h1, #portfolio-intro .h1 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    letter-spacing: 0.2rem; }
 
 #projects-container {
   margin-top: 3rem;
@@ -7273,7 +7274,7 @@ nav {
           transform: translateY(-0.25em); }
 
 .modal-header {
-  background-color: #ffa260;
+  background-color: #e6e6e6;
   text-align: center; }
   .modal-header h3, .modal-header .h3 {
     text-align: center; }

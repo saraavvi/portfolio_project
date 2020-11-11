@@ -10,8 +10,6 @@ body {
 }
 // navbaren
 nav {
-  //position: fixed;
-  //grid-area: nav;
   @include header-nav;
 }
 // grid setup
@@ -25,16 +23,17 @@ nav {
     "form form form"
     "footer footer footer";
 }
-//page intro
+//page intro styling
 #contact-intro {
   margin-top: 2rem;
   grid-area: heading;
   text-align: center;
   h1 {
     font-size: 4rem;
+    letter-spacing: 0.2rem;
   }
 }
-//contact form
+//contact form styling
 #contactform-container {
   margin-top: 3rem;
   grid-area: form;
@@ -64,8 +63,8 @@ nav {
     }
   }
 }
+//footer styling
 footer {
-  //background-color: $extra-dark-color;
   grid-area: footer;
   display: flex;
   justify-content: center;
@@ -83,6 +82,7 @@ footer {
     }
   }
 }
+
 //media queries for ipad and iphones
 @media (max-width: 800px) {
   .grid-container {

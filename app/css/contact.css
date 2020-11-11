@@ -7236,7 +7236,8 @@ nav {
   grid-area: heading;
   text-align: center; }
   #contact-intro h1, #contact-intro .h1 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    letter-spacing: 0.2rem; }
 
 #contactform-container {
   margin-top: 3rem;
