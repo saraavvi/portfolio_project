@@ -66,6 +66,7 @@ nav {
         background-color: $dark-color;
         border: 2px solid $primary-color;
         color: $primary-color;
+        transition: 0.2s;
         &:hover {
           @include button-effect;
         }

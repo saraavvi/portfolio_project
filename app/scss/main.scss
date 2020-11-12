@@ -14,7 +14,7 @@ nav {
 // grid setup
 .grid-container {
   display: grid;
-  grid-template-rows: 100vh 5fr;
+  grid-template-rows: 100vh 100vh;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
     "home home home"
@@ -44,6 +44,7 @@ nav {
       background-color: $dark-color;
       border: 2px solid $primary-color;
       color: $primary-color;
+      transition: 0.2s;
 
       &:hover {
         @include button-effect;

@@ -7207,12 +7207,11 @@ nav {
       nav ul li a:after {
         bottom: 0;
         content: "";
-        display: block;
         height: 2px;
         left: 50%;
         position: absolute;
         background: #fff;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        transition: 0.3s;
         width: 0; }
       nav ul li a:hover:after {
         width: 100%;
@@ -7225,7 +7224,7 @@ nav {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 100vh 5fr;
+  grid-template-rows: 100vh 100vh;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas: "home home home" "about about about"; }
 
@@ -7247,7 +7246,8 @@ nav {
       margin: 1.5rem;
       background-color: #22263d;
       border: 2px solid #ffa260;
-      color: #ffa260; }
+      color: #ffa260;
+      transition: 0.2s; }
       #home #hello-container a:hover {
         color: #f1ff5c;
         border-color: #f1ff5c;

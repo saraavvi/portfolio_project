@@ -7209,12 +7209,11 @@ nav {
       nav ul li a:after {
         bottom: 0;
         content: "";
-        display: block;
         height: 2px;
         left: 50%;
         position: absolute;
         background: #fff;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        transition: 0.3s;
         width: 0; }
       nav ul li a:hover:after {
         width: 100%;
@@ -7266,7 +7265,8 @@ nav {
         margin: 1.5rem;
         background-color: #22263d;
         border: 2px solid #ffa260;
-        color: #ffa260; }
+        color: #ffa260;
+        transition: 0.2s; }
         #projects-container .card .card-body .btn:hover {
           color: #f1ff5c;
           border-color: #f1ff5c;

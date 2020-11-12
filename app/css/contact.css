@@ -7208,12 +7208,11 @@ nav {
       nav ul li a:after {
         bottom: 0;
         content: "";
-        display: block;
         height: 2px;
         left: 50%;
         position: absolute;
         background: #fff;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        transition: 0.3s;
         width: 0; }
       nav ul li a:hover:after {
         width: 100%;
