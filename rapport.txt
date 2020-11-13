@@ -1,38 +1,55 @@
 Scrum:
 
-Scrum är en agil metod. Det kännetecknas av att fokus ligger på själva produkten man utvecklar och inte hur man utvecklar den. Arbetet är uppdelat i tidsbestämda iterationer, så kallade sprintar. Dessa perioder kan vara mellan 3 - 30 dagar. Människorna i scrum-teamet är uppdelade i tre roller: Produktägaren, Scrum master och Utvecklingstemet.
+Scrum är en agil metod. Det kännetecknas av att fokus ligger på själva produkten man
+utvecklar och inte hur man utvecklar den. Arbetet är uppdelat i tidsbestämda iterationer,
+så kallade sprintar. Dessa perioder kan vara mellan 3 - 30 dagar. Människorna i scrum-teamet 
+är uppdelade i tre roller: Produktägaren, Scrum master och Utvecklingstemet.
 Kort beskrivet fungerar det som följande:
 
 Product Backlog
-Det finns en slags To-Do-lista över allt som behöver göras. Det är produktägaren som bestämmer över vad som finns här och hur listan ska prioriteras.
+Det finns en slags To-Do-lista över allt som behöver göras. Det är produktägaren som bestämmer 
+över vad som finns här och hur listan ska prioriteras.
 
 Sprint Planning
-Ett möte hålls där utvecklingsteamet bedömer vilka delar från product backlog de hinner göra i kommande sprint, och flyttar dessa till sprint backlog.
+Ett möte hålls där utvecklingsteamet bedömer vilka delar från product backlog de hinner göra 
+i kommande sprint, och flyttar dessa till sprint backlog.
 
 Sprint Backlog
 Detta är kommande sprints to-do-lista.
 
 Daily Scrum
-Utvecklingsteamet har varje dag ett kort möte på ca 15 minuter för att stämma av med varandra och planera de kommande 24 timmarna.
+Utvecklingsteamet har varje dag ett kort möte på ca 15 minuter för att stämma av med 
+varandra och planera de kommande 24 timmarna.
 
 Sprint Review
-Utvecklingsteamet, scrum master och produktägaren granskar sprintens resultat. Vad har gjorts/inte gjorts och hur påverkar detta nästa sprint?
+Utvecklingsteamet, scrum master och produktägaren granskar sprintens resultat. 
+Vad har gjorts/inte gjorts och hur påverkar detta nästa sprint?
 
 Sprint Retrospective
-Utvecklingsteamet, scrum master och produktägaren utvärderar den senaste sprinten utifrån arbetssätt och identifierar möjlig förbättringar.
+Utvecklingsteamet, scrum master och produktägaren utvärderar den senaste sprinten utifrån 
+arbetssätt och identifierar möjlig förbättringar.
 
 Nu är denna sprinten klar och ett nytt sprint planning möte hålls.
 
 
 Grafisk profil:
 
-Det är instruktioner för tex vilka färger och typsnitt som ska användas, och hur företagets logotyp ska användas och anpassas efter olika användningsområden. Detta för att kunna vara konsekvent med designen och hur företaget representeras visuellt. Det här är ju oftast det första intrycket en potentiell kund får av företaget. Med hjälp av en grafisk profil kan man skapa en visuell upplevelse som stärker varumärkets strategi och värderingar. Och man skapar igenkänning. 
+Det är instruktioner för tex vilka färger och typsnitt som ska användas, och hur företagets logotyp 
+ska användas och anpassas efter olika användningsområden. Detta för att kunna vara konsekvent med 
+designen och hur företaget representeras visuellt. Det här är ju oftast det första intrycket en 
+potentiell kund får av företaget. Med hjälp av en grafisk profil kan man skapa en visuell upplevelse 
+som stärker varumärkets strategi och värderingar. Och man skapar igenkänning. 
 
 
 Tillgänglighet: 
 
-Innebär att Webbsidan ska vara tillgänglig även för människor med funktionshinder av olika slag. Exempel människor med syn- eller hörselnedsättning, eller äldre personer. Genom att använda sig av de olika webbriktlinjerna kan man skapa bättre förutsättningar för att alla ska ha möjlighet att använda sig av sidan. Det kan bland annat handla om att visa om ett fel har uppstått i ett formulär och beskriva det tydligt. Det ska också framgå tydligt var  någonstans felt uppstod och placera meddelandet i anslutning till det fältet. 
-Det kan också handla om att beskriva allt innehåll som inte är text, för att användare med skärmläsare ska kunna uppfatta innehållet. Tex ge en beskrivande text till en bild eller ett diagram.
+Innebär att Webbsidan ska vara tillgänglig även för människor med funktionshinder av olika slag. 
+Exempel människor med syn- eller hörselnedsättning, eller äldre personer. Genom att använda sig av de 
+olika webbriktlinjerna kan man skapa bättre förutsättningar för att alla ska ha möjlighet att använda sig av sidan. 
+Det kan bland annat handla om att visa om ett fel har uppstått i ett formulär och beskriva det tydligt. 
+Det ska också framgå tydligt var  någonstans felt uppstod och placera meddelandet i anslutning till det fältet. 
+Det kan också handla om att beskriva allt innehåll som inte är text, för att användare med skärmläsare ska 
+kunna uppfatta innehållet. Tex ge en beskrivande text till en bild eller ett diagram.
 
 I mitt portfolio har jag använt mig av:
 
@@ -55,20 +72,37 @@ https://webbriktlinjer.se/riktlinjer/84-se-till-att-koden-validerar/
 Nackdelar/svårigheter med scrum:
 
 - Det är svårt att uppskatta hur lång tid saker kommer att ta, samt att prioritera vad som är viktigast.
-I våran grupp hade vi olika synpunkter kring vad som ver viktigast och vad som kunde vänta. Men jag tänker att i verkligheten så kommer scrum mastern, eller den som har koll på vad kunden vill, kunna göra prioriteringar som utvecklingsteamet kan följa. 
-- En annan sak jag tyckte var jobbig var när man inte får tag på produktägaren, när man tex behövde få något förtydligat för att kunna fortsätta med en uppgift. Då stannar vissa delar av arbetet upp lite grann. 
-- I vårt fall tyckte jag det var svårt när olika personer hade valt att jobba med “närliggande kort”. Det tar då tid för de olika delarna att “sättas ihop” ifall de gjorts på sätt som inte helt och hållet fungerar ihop. Därför är det viktigt att ha en gemensam plan för hur något ska vara uppbyggt innan man sätter igång, för att inte behöva lägga onödig tid på detta senare. 
+I våran grupp hade vi olika synpunkter kring vad som ver viktigast och vad som kunde vänta. 
+Men jag tänker att i verkligheten så kommer scrum mastern, eller den som har koll på vad kunden vill, 
+kunna göra prioriteringar som utvecklingsteamet kan följa. 
+- En annan sak jag tyckte var jobbig var när man inte får tag på produktägaren, när man tex behövde få 
+något förtydligat för att kunna fortsätta med en uppgift. Då stannar vissa delar av arbetet upp lite grann. 
+- I vårt fall tyckte jag det var svårt när olika personer hade valt att jobba med “närliggande kort”. 
+Det tar då tid för de olika delarna att “sättas ihop” ifall de gjorts på sätt som inte helt och hållet fungerar ihop. 
+Därför är det viktigt att ha en gemensam plan för hur något ska vara uppbyggt innan man sätter igång, 
+för att inte behöva lägga onödig tid på detta senare. 
 
 
 Nackdelar/svårigheter med grafisk profil:
 
-Jag tänker att det kan finnas svårigheter med att ta fram en bra grafisk profil, att lyckas med att få den att gå hand i hand med vad företaget och varumärket står för och förstärka det. Bara för man har en grafisk profil behöver det ju nödvändigtvis inte betyda att den gör dessa saker. 
-Sen tror jag det är viktigt att de som designar och utvecklar sidan har förstått och tolkat den grafiska profilen rätt. När våran grupp skulle följa den grafiska profilen vi fått så hade vi utrymme för att använda den lite som vi ville. Och den grafiska profilen som vi skapat åt den andra gruppen användes inte alls så som jag hade tänkt när vi gjorde den. Så hur tydlig den grafiska profilen är, och hur bra kommunikationen mellan kund och utvecklare är påverkar resultatet. 
+Jag tänker att det kan finnas svårigheter med att ta fram en bra grafisk profil, att lyckas med att få den 
+att gå hand i hand med vad företaget och varumärket står för och förstärka det. 
+Bara för man har en grafisk profil behöver det ju nödvändigtvis inte betyda att den gör dessa saker. 
+Sen tror jag det är viktigt att de som designar och utvecklar sidan har förstått och tolkat den grafiska profilen rätt. 
+När våran grupp skulle följa den grafiska profilen vi fått så hade vi utrymme för att använda den lite som vi ville. 
+Och den grafiska profilen som vi skapat åt den andra gruppen användes inte alls så som jag hade tänkt när vi gjorde den. 
+Så hur tydlig den grafiska profilen är, och hur bra kommunikationen mellan kund och utvecklare är påverkar resultatet. 
 
 
 Nackdelar/svårigheter med tillgänglighet:
 
-Att kunna använda webbriktlinjerna utan att det påverkar andra delar negativt. Alltså kunna avväga hur långt man ska gå i ett tillgänglighetsperspektiv med hänsyn till vilken målgrupp det är man vill nå ut till och vad syftet med hemsidan är. 
-Vad är det för hemsida och vilken målgrupp vänder man sig till? Är det en e-handelssida som fokuserar på att vara så lönsam som möjligt? Då kanske man tittar på om det är värt att anpassa sidan för alla typer av människor, om det inte skapar med intäkter? Då kanske man väljer en del av webbriktlinjerna man tror är viktigast och som inte kommer ha en negativ inverkan. Är det en sida som ska vända sig mot yngre människor kanske man inte anpassar sidan till äldre människor i den utsträckning man gjort annars. 
-Är det däremot en sida som tex vårdguiden, så är det ju väldigt viktigt att den är anpassad för alla människor. I detta fall är tillgängligheten väldigt viktig.
+Att kunna använda webbriktlinjerna utan att det påverkar andra delar negativt. Alltså kunna avväga hur långt 
+man ska gå i ett tillgänglighetsperspektiv med hänsyn till vilken målgrupp det är man vill nå ut till och vad syftet med hemsidan är. 
+Vad är det för hemsida och vilken målgrupp vänder man sig till? 
+Är det en e-handelssida som fokuserar på att vara så lönsam som möjligt? Då kanske man tittar på om det är värt att anpassa sidan 
+för alla typer av människor, om det inte skapar med intäkter? Då kanske man väljer en del av webbriktlinjerna 
+man tror är viktigast och som inte kommer ha en negativ inverkan. Är det en sida som ska vända sig mot yngre människor 
+kanske man inte anpassar sidan till äldre människor i den utsträckning man gjort annars. 
+Är det däremot en sida som tex vårdguiden, så är det ju väldigt viktigt att den är anpassad för alla människor. 
+I detta fall är tillgängligheten väldigt viktig.
 
