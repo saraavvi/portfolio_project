@@ -7224,9 +7224,9 @@ nav {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 100vh 1fr 1fr;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-areas: "home home home" "about about about"; }
+  grid-template-areas: "home home home" "about about about" "portfolio portfolio portfolio"; }
 
 #home {
   grid-area: home;
@@ -7240,6 +7240,8 @@ nav {
     flex-direction: column;
     align-items: center; }
     #home #hello-container h1, #home #hello-container .h1 {
+      color: #fff; }
+    #home #hello-container p {
       color: #fff; }
     #home #hello-container a {
       padding: 1rem;
@@ -7256,34 +7258,62 @@ nav {
 
 #about {
   display: grid;
-  grid-template-rows: 5fr 5fr 2fr;
-  grid-template-columns: 1fr 2.5fr;
-  grid-template-areas: "image about" "education education" "arrow arrow";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "left intro right" "tech tech tech";
   margin-top: 2rem;
   grid-area: about;
   background: #e6e6e6;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  align-items: center;
-  row-gap: 1rem; }
-  #about #cv-img-container {
-    grid-area: image;
-    width: 200px; }
-    #about #cv-img-container #cv-img {
-      border-radius: 10px; }
+  align-items: center; }
+  #about h2, #about .h2 {
+    margin-bottom: 2rem; }
   #about #introduction-container {
-    grid-area: about;
-    margin: 1rem;
-    width: 70%; }
-  #about #education-container {
-    grid-area: education; }
-  #about #arrow {
+    padding: 2rem;
+    grid-area: intro;
+    text-align: center; }
+  #about #tech-container {
+    padding: 2rem;
+    grid-area: tech;
+    text-align: center;
+    background-color: white; }
+    #about #tech-container #tech-list {
+      font-size: 1.5rem;
+      margin: auto;
+      width: 30%; }
+
+#portfolio {
+  grid-area: portfolio;
+  align-items: center;
+  text-align: center; }
+  #portfolio #project-list {
+    display: flex;
+    margin: 5rem;
+    justify-content: center; }
+    #portfolio #project-list .project-container {
+      width: 350px;
+      height: 450px;
+      border: 1px solid black;
+      margin: 1rem; }
+      #portfolio #project-list .project-container .project-img {
+        border: 1px solid red;
+        width: 350px;
+        height: 300px; }
+
+footer {
+  padding: 2rem;
+  background-color: #151b29;
+  color: #fff;
+  text-align: center; }
+  footer h2, footer .h2 {
+    margin-bottom: 2rem; }
+  footer #arrow {
+    padding: 2rem;
     grid-area: arrow;
     width: 100%;
     display: flex;
     justify-content: center; }
-    #about #arrow-img {
-      width: 30px; }
+    footer #arrow-img {
+      width: 80px; }
 
 @media (max-width: 800px) {
   #about {

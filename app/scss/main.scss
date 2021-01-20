@@ -14,11 +14,12 @@ nav {
 // grid setup
 .grid-container {
   display: grid;
-  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 100vh 1fr 1fr;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
     "home home home"
-    "about about about";
+    "about about about"
+    "portfolio portfolio portfolio";
 }
 
 // styling for home / landing page section
@@ -35,6 +36,9 @@ nav {
     flex-direction: column;
     align-items: center;
     h1 {
+      color: $light-color;
+    }
+    p {
       color: $light-color;
     }
 
@@ -55,42 +59,82 @@ nav {
 // styling for about me and education section
 #about {
   display: grid;
-  grid-template-rows: 5fr 5fr 2fr;
-  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
-    "image about"
-    "education education"
-    "arrow arrow";
+    "left intro right"
+    "tech tech tech";
   margin-top: 2rem;
   grid-area: about;
   background: darken($light-color, 10%);
-  grid-column-start: 2;
-  grid-column-end: 2;
+  // grid-column-start: 2;
+  // grid-column-end: 2;
   align-items: center;
-  row-gap: 1rem;
-  #cv-img-container {
-    grid-area: image;
-    width: 200px;
+  h2 {
+    margin-bottom: 2rem;
+  }
 
-    #cv-img {
-      border-radius: 10px;
+  #introduction-container {
+    padding: 2rem;
+    grid-area: intro;
+
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
+  }
+  #tech-container {
+    padding: 2rem;
+    grid-area: tech;
+    text-align: center;
+    background-color: white;
+
+    #tech-list {
+      font-size: 1.5rem;
+      margin: auto;
+      width: 30%;
     }
   }
-  #introduction-container {
-    grid-area: about;
-    margin: 1rem;
-    width: 70%;
+}
+#portfolio {
+  grid-area: portfolio;
+  align-items: center;
+  text-align: center;
+  #project-list {
+    display: flex;
+    margin: 5rem;
+    justify-content: center;
+
+    .project-container {
+      width: 350px;
+      height: 450px;
+      border: 1px solid black;
+      margin: 1rem;
+
+      .project-img {
+        border: 1px solid red;
+        width: 350px;
+        height: 300px;
+      }
+    }
   }
-  #education-container {
-    grid-area: education;
+}
+//footer styling
+footer {
+  padding: 2rem;
+  background-color: $extra-dark-color;
+  color: $light-color;
+  text-align: center;
+  h2 {
+    margin-bottom: 2rem;
   }
   #arrow {
+    padding: 2rem;
     grid-area: arrow;
     width: 100%;
     display: flex;
     justify-content: center;
     &-img {
-      width: 30px;
+      width: 80px;
     }
   }
 }

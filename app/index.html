@@ -15,13 +15,16 @@
     <nav id="header-nav">
       <ul>
         <li id="home-link">
-          <a href="index.html">Home</a>
+          <a href="#header-nav">Home</a>
         </li>
         <li>
-          <a href="portfolio.html">Portfolio</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="contact.html">Contact</a>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </nav>
@@ -34,6 +37,12 @@
             Hello, I'm Sara. <br />
             I'm a Web Developer Student
           </h1>
+          <p>
+            I am studying to become a fullstack web developer at Nackademin in
+            Stockholm, <br />
+            and currently looking for a company to do my internship at, next
+            fall 2021
+          </p>
 
           <a href="#about" class="btn btn-dark"> Find Out More</a>
         </div>
@@ -41,39 +50,21 @@
 
       <!--about me and education section-->
       <section id="about">
-        <div id="cv-img-container">
-          <img id="cv-img" src="./img/IMG_1424.jpg" alt="Photo Of Me" />
-        </div>
         <div id="introduction-container">
-          <h2>Vem är jag?</h2>
+          <h2>ABOUT</h2>
           <p>
             Jag studerar programmet Webbutvecklare fullstack open source på
-            Nackademin i Stockholm. Jag har länge varit intresserad av teknik
-            och problemlösning, men efter ett par år som ingenjörsstudent kände
-            jag dels att jag ville göra något mer praktiskt, men också efter att
-            ha introducerats till programmering, som fick mig att få upp ögonen
-            för IT-branschen, gjorde att jag beslutade mig för att byta
-            inriktning.
-          </p>
-        </div>
-        <!-- education -->
-        <div id="education-container">
-          <h2>Vad är Webbutvecklare fullstack open source?</h2>
-          <p>
-            Det är en 2 år lång YH-utbildning som fokuserar på praktiskt
-            lärande, där en stor del av utbildningen görs på en arbetsplats.
-            Eftersom utbildningens innehåll tas fram i samarbete med
-            näringslivet så lär vi oss de senaste och mest aktuella teknikerna,
-            och det som efterfrågas på arbetsmarknaden.
+            Nackademin. Det är en 2 år lång YH-utbildning som fokuserar på
+            praktiskt lärande, där en stor del av utbildningen görs på en
+            arbetsplats. Eftersom utbildningens innehåll tas fram i samarbete
+            med näringslivet så lär vi oss de senaste och mest aktuella
+            teknikerna, och det som efterfrågas på arbetsmarknaden.
           </p>
           <p>
             Det som lockade mig att välja just denna utbildningen är att den är
             så bred - den omfattar både backend och frontend, vilket ger mig en
             möjlighet att få en inblick i de olika delarna, för att kunna välja
-            att inrikta mig mot det som intresserar mig mest. Utbildningen
-            innehåller bland annat kurser i HTML, CSS och SASS, Javascript,
-            Node.js, Databasteknik, olika Javascript-bibliotek och ramverk, PHP,
-            Projektmetodik med scrum mm.
+            att inrikta mig mot det som intresserar mig mest.
           </p>
           <p>
             För mer info besök utbildningens hemsida:
@@ -83,14 +74,61 @@
             >
           </p>
         </div>
+        <!-- tech -->
+        <div id="tech-container">
+          <h2>TECH & SKILLS</h2>
+          <p id="tech-list">
+            HTML, CSS, Sass, Styled components, Javascript, React, MySQL,
+            MongoDB, Node.js, PHP, API:s, Scrum, Git & GitHub
+          </p>
+        </div>
+      </section>
+      <section id="portfolio">
+        <h2>PROJECTS</h2>
+        <div id="project-list">
+          <div class="project-container">
+            <div class="project-img">BILD</div>
+            <h3>Project name</h3>
+            <p>short description..</p>
+          </div>
+          <div class="project-container">
+            <div class="project-img">BILD</div>
+            <h3>Project name</h3>
+            <p>short description..</p>
+          </div>
 
-        <div id="arrow">
-          <a href="#header-nav">
-            <img id="arrow-img" src="./img/up-chevron.svg" alt="Up Arrow" />
-          </a>
+          <div class="project-container">
+            <div class="project-img">BILD</div>
+            <h3>Project name</h3>
+            <p>short description..</p>
+          </div>
+          <div class="project-container">
+            <div class="project-img">BILD</div>
+            <h3>Project name</h3>
+            <p>short description..</p>
+          </div>
         </div>
       </section>
     </div>
+    <!-- footer with links-->
+    <footer>
+      <h2>CONTACT</h2>
+      <p>Sara Viktorsson</p>
+      <p>072-010 10 51</p>
+      <p>sara.viktorsson@yh.nackademin.se</p>
+
+      <p>
+        <a href="https://www.linkedin.com/in/sara-viktorsson-5658b1135/"
+          >Linkedin
+        </a>
+      </p>
+      <p><a href="https://github.com/saraavvi">Github</a></p>
+      <div id="arrow">
+        <a href="#header-nav">
+          <img id="arrow-img" src="./img/up-chevron.svg" alt="Up Arrow" />
+        </a>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
